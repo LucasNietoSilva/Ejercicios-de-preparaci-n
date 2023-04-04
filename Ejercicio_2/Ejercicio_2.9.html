@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicio 1.2</title>
+    <title>Ejercicio 2.9</title>
   </head>
   <body>
     <script>
-      const tempCelcius = Number(prompt("Temperatura en Celcius: "));
-      const tempFahrenheit = (tempCelcius * 9) / 5 + 32;
-      alert(`Temperatura en Fahrenheit: ${tempFahrenheit} °F`);
+      const añoBisiesto = Number(prompt("Introduzca un año:"));
+
+      if (añoBisiesto % 400 === 0 || añoBisiesto % 4 === 0) {
+        alert("Es un año bisiesto");
+      } else {
+        alert("No es un año bisiesto");
+      }
     </script>
   </body>
 </html>

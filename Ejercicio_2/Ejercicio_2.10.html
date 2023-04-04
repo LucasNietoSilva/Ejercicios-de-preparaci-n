@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2.10</title>
+  </head>
+  <body>
+    <script>
+      let numAleatorio = Math.floor(Math.random() * 10) + 1;
+      console.log(numAleatorio);
+
+      const num = Number(
+        prompt("Intente adivinar el número aleatorio que genera el programa: ")
+      );
+
+      const match =
+        numAleatorio == num
+          ? alert(num + ", Buen trabajo")
+          : alert(num + ", No corresponde");
+    </script>
+  </body>
+</html>
