@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3.14</title>
+  </head>
+  <body>
+    <script>
+      document.write("Cuadrado lleno:");
+      document.write("<br>");
+
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5; j++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+      document.write("<br>");
+
+      document.write("Cuadrado hueco:");
+      document.write("<br>");
+
+      for (let f = 1; f <= 5; f++) {
+        for (let c = 1; c <= 5; c++) {
+          if (f == 1 || f == 5 || c == 1 || c == 5) {
+            document.write("*");
+          } else {
+            document.write("&nbsp;&nbsp;");
+          }
+        }
+        document.write("<br>");
+      }
+      document.write("<br>");
+
+      // for (let c = 1; c <= 5; c++) {
+      //   document.write("*");
+      // }
+      // document.write("<br>");
+      // for (let f = 1; f <= 3; f++) {
+      //   for (let c = 1; c <= 5; c++) {
+      //     if (c == 1 || c == 5) {
+      //       document.write("*");
+      //     } else {
+      //       document.write('&nbsp;&nbsp;');
+      //     }
+      //   }
+      //   document.write("<br>");
+      // }
+      // for (let c = 1; c <= 5; c++) {
+      //   document.write("*");
+      // }
+      // document.write("<br>");
+
+      document.write("Tablero de ajedrez:");
+      document.write("<br>");
+
+      for (let f = 1; f <= 7; f++) {
+        if (f % 2 == 0) {
+          for (let i = 1; i <= 7; i++) {
+            document.write("&nbsp" + "*");
+          }
+        } else {
+          for (let i = 1; i <= 8; i++) {
+            document.write("* ");
+          }
+        }
+        document.write("<br>");
+      }
+      document.write("<br>");
+
+      document.write("Piramide izquierda:");
+      document.write("<br>");
+
+      for (let f = 1; f <= 5; f++) {
+        for (let c = 1; c <= f; c++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+      document.write("<br>");
+
+      document.write("Diamante:");
+      document.write("<br>");
+
+      for (let f = 1; f <= 9; f++) {
+        document.write("*");
+        if (f <= 5) {
+          for (let i = 2; i <= f; i++) {
+            document.write("**");
+          }
+        }
+        if (f > 5) {
+          for (let i = 9; i > f; i--) {
+            document.write("**");
+          }
+        }
+        document.write("<br>");
+      }
+      document.write("<br>");
+
+      document.write("Pirámide invertida:");
+      document.write("<br>");
+
+      for (let f = 1; f <= 5; f++) {
+        document.write("*");
+        for (let c = 5; c > f; c--) {
+          document.write("**");
+        }
+        document.write("<br>");
+      }
+      document.write("<br>");
+
+      document.write("Pirámide centrada:");
+      document.write("<br>");
+
+      for ( f = 1; f <= 5; f++) {
+        for (e = 1; e <= 5 - f; e++) {
+          document.write("&nbsp;&nbsp")
+        }
+        for(a = 0; a < 2 * f -1; a++) {
+          document.write("*")
+        }
+        document.write("<br>");
+      }
+
+    </script>
+  </body>
+</html>

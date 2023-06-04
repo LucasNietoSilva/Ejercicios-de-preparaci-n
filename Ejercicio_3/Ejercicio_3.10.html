@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3.10</title>
+  </head>
+  <body>
+    <script>
+      const num = Number(prompt("Ingrese un número: "));
+      if (num <= 2) {
+          alert("Ingrese un numero mayor a 2");
+        }
+      let primos = 0;
+      while (num > 2) {
+        
+        for (let i = 2; i <= num / 2; i++) {
+          if (num % i == 0) {
+            primos = 1;
+            break;
+          }
+        }
+        if (num > 1 && !primos) {
+          alert(`${num} es primo`);
+        } else {
+          alert(`${num} no es primo`);
+        }
+        break
+      }
+    </script>
+  </body>
+</html>
