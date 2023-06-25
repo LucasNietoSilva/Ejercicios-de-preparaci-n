@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4.1</title>
+  </head>
+  <body>
+    <script>
+      let pares = "";
+      const aumDosEnDos = (start, numHasta) => {
+        for (let i = start; i <= numHasta; i = i + 2) {
+          if (i == numHasta) {
+            pares += i + ".";
+          } else {
+            pares += i + ", ";
+          }
+        }
+        console.log(pares);
+      };
+
+      aumDosEnDos(2, 12);
+    </script>
+  </body>
+</html>

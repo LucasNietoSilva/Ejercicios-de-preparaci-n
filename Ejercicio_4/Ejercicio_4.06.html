@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4.6</title>
+</head>
+<body>
+    <script>
+        function sumarNumerosPar (n, m) {
+            let sumaPar = 0;
+
+            if (n > m) {
+                let invertir = n;
+                n = m;
+                m = invertir;
+            }
+
+            for (let i = n; i <= m; i++) {
+                if (i % 2 === 0) {
+                    sumaPar += i;
+                }
+            }
+            
+            return sumaPar;
+
+        }
+
+        const n = Number(prompt("Ingrese el primer número: "));
+        const m = Number(prompt("Ingrese el segundo número: "));
+
+        const resultado = sumarNumerosPar(n,m);
+
+        console.log("La suma de los número pares entre " + n + " y " + m + " es, " + resultado)
+    </script>
+</body>
+</html>

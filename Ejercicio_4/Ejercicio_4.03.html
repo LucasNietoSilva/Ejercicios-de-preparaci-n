@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4.3</title>
+  </head>
+  <body>
+    <script>
+      function disminuir() {
+        const higher = Number(prompt("Introduce un número: "));
+        let resp = `Entre ${higher} y 1: `;
+        for (let i = higher; i > 0; i--) {
+          if (i == 1) {
+            resp = resp + i + ".";
+          } else {
+            resp = resp + i + ", ";
+          }
+        }
+        return resp;
+      }
+
+      alert(disminuir());
+    </script>
+  </body>
+</html>

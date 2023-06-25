@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4.4</title>
+  </head>
+  <body>
+    <script>
+      let resp = "";
+      const tabla_nueve = (multiplier, multiplying) => {
+        for (let i = 1; i <= multiplying; i++) {
+          resp = `${resp}${multiplier} x ${i} = ${multiplier * i}\n`;
+        }
+        alert(resp);
+      };
+      const multiplier = Number(prompt("Ingrese el multiplicando: "));
+      tabla_nueve(multiplier, 10);
+    </script>
+  </body>
+</html>
