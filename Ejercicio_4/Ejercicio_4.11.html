@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4.11</title>
+  </head>
+  <body>
+    <script>
+      function validarNumeroEntero(numero) {
+        if (typeof numero !== "number" || !Number.isInteger(numero)) {
+          throw new Error("Número invalido! Debe ser un entero.");
+        }
+      }
+
+      try {
+        validarNumeroEntero(24);
+      } catch (error) {
+        console.log(error.message);
+      }
+    </script>
+  </body>
+</html>
