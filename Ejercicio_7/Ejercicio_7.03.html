@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 7.3</title>
+  </head>
+  <body>
+    <script>
+      const num = prompt(
+        "Ingrese dos conjuntos de numeros separados por comas"
+      );
+
+      const conjunto = num.split(",");
+      if (conjunto[0].split("").length === conjunto[1].split("").length) {
+        alert("Ambos conjunto de numeros tienen la misma cantidad");
+      } else {
+        alert("No contienen la misma cantidad de numeros");
+      }
+      console.log(conjunto);
+    </script>
+  </body>
+</html>

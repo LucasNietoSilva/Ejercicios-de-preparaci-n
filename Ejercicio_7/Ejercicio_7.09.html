@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7.9</title>
+</head>
+<body>
+    <script>
+        function mayorMenor (arr) {
+            if (arr.length <= 1) {
+                return arr;
+            }
+
+            const pivot = arr[Math.floor(arr.length / 2)];
+            const left = [];
+            const right = [];
+
+            for (const element of arr) {
+                if ( element > pivot) {
+                    left.push(element); 
+                } else if (element < pivot) {
+                    right.push(element);
+                }
+            }
+
+            return [...mayorMenor(left), pivot, ...mayorMenor(right)];
+            
+        }
+        
+        const arrayDesordenado = [2, 4, 5, 1, 3, 9];
+        const arrayOrdenado = mayorMenor(arrayDesordenado);
+        console.log(arrayOrdenado);
+    </script>
+</body>
+</html>

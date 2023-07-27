@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 7.6</title>
+  </head>
+  <body>
+    <script>
+      function palabrasVocales(vocal) {
+        const vocales = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"];
+        return vocal.filter((palabra) => {
+          const primeraLetra = palabra[0];
+          return vocales.includes(primeraLetra);
+        });
+      }
+
+      const palabras = [
+        "Mostrar",
+        "palabras",
+        "que",
+        "comiencen",
+        "con",
+        "una",
+        "vocal",
+      ];
+      const result = palabrasVocales(palabras);
+      console.log(result);
+    </script>
+  </body>
+</html>

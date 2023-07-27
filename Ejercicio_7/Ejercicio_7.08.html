@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 7.8</title>
+  </head>
+  <body>
+    <script>
+      function intercambiarElementos(arr, index1, index2) {
+        let newArray = arr.slice();
+
+        let temp = newArray[index1];
+        newArray[index1] = newArray[index2];
+        newArray[index2] = temp;
+
+        return newArray;
+      }
+
+      let myArr = [1, 2, 3];
+      let newArray = intercambiarElementos(myArr, 0, 2);
+      console.log(newArray);
+    </script>
+  </body>
+</html>

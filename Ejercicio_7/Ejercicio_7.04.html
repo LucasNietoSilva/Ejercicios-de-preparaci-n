@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 7.4</title>
+  </head>
+  <body>
+    <script>
+      const num = prompt(
+        "Ingrese dos conjuntos de numeros separados por comas"
+      );
+
+      const conjunto = num.split(",");
+      const conjunto1Array = conjunto[0].split("");
+      const conjunto2Array = conjunto[1].split("");
+      if (conjunto1Array.length === conjunto2Array.length) {
+        let sumaArray = conjunto1Array
+          .map(Number)
+          .map((element, inx) => element + Number(conjunto2Array[inx]));
+
+        console.log(sumaArray);
+      } else {
+        console.log(
+          "No contiene la misma cantidad de elementos en el conjuntos de números"
+        );
+      }
+    </script>
+  </body>
+</html>

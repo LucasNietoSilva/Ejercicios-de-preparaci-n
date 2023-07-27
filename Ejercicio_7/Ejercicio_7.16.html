@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 7.16</title>
+  </head>
+  <body>
+    <script>
+      function multiMatriz(matriz1) {
+        const resultado = [];
+
+        for (let i = 0; i < matriz1.length; i++) {
+          const filaResultado = [];
+          for (let j = 0; j < matriz1[0].length; j++) {
+            filaResultado.push(matriz1[i][j] * 2);
+          }
+          resultado.push(filaResultado);
+        }
+        return resultado;
+      }
+
+
+      const matriz1 = [[1,2,3],[4,5,6]];
+      const multiResultado = multiMatriz(matriz1);
+      console.log(multiResultado);
+    </script>
+  </body>
+</html>
