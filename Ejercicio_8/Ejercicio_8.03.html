@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 8.3</title>
+  </head>
+  <body>
+    <script>
+      function promedioRangoArray(array, num) {
+        let suma = 0;
+        for (let i = 1; i < array[num]; i++) {
+          suma += i;
+          console.log(suma)
+        }
+        const promedio = suma / array[num];
+
+        return promedio;
+      }
+
+      const numRango = 6;
+      const arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      const promedioRango = promedioRangoArray(arreglo, numRango);
+      console.log("El promedio dentro del rango de " + numRango + " posiciones, es de " + promedioRango)
+    </script>
+  </body>
+</html>

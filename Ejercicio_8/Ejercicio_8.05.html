@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 8.5</title>
+  </head>
+  <body>
+    <script>
+      function persona(nombre, edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+      }
+
+      const personaUno = new persona("Lucas", 24);
+      const personaDos = new persona("Bruno", 14);
+
+      console.log("Hola, mi nombre es " + personaUno.nombre + " tengo " + personaUno.edad + " años.");
+    </script>
+  </body>
+</html>

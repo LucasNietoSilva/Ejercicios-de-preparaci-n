@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 8.7</title>
+  </head>
+  <body>
+    <script>
+      function telefonos(numero) {
+        this.numero = numero;
+        this.numerosDeLlamadas = 0;
+      }
+
+      telefonos.prototype.llamar = function () {
+        this.numerosDeLlamadas++;
+      };
+
+      const telefonoUno = new telefonos("098765543");
+
+      telefonoUno.llamar();
+      telefonoUno.llamar();
+      telefonoUno.llamar();
+
+      console.log(`El número ${telefonoUno.numero} recibió ${telefonoUno.numerosDeLlamadas} llamadas.`)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 8.6</title>
+  </head>
+  <body>
+    <script>
+      function edadPromedio(personas) {
+        const sumaEdad = personas.reduce((acumulador, personas) => acumulador + personas.edad, 0);
+        const promedio = sumaEdad / personas.length;
+
+        return Math.floor(promedio);
+      }
+
+      const personas = [
+        {
+          nombre: "Lucas",
+          edad: 24,
+        },
+        {
+          nombre: "Mercedes",
+          edad: 48,
+        },
+        {
+          nombre: "Manuel",
+          edad: 60,
+        },
+        {
+          nombre: "Manuela",
+          edad: 17,
+        },
+        {
+          nombre: "Lupita",
+          edad: 4,
+        },
+      ];
+
+      const edadPremedioPersonas = edadPromedio(personas);
+      console.log(`La edad promedio de las personas es de ${edadPremedioPersonas}`);
+    </script>
+  </body>
+</html>

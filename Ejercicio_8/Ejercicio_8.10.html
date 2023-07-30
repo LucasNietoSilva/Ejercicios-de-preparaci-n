@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 8.10</title>
+  </head>
+  <body>
+    <script>
+      setInterval(() => {
+        const data = new Date();
+        const hora = data.getHours();
+        const min = data.getMinutes();
+        const seg = data.getSeconds();
+        console.log(`La hora es: ${hora}:${min}:${seg}`)
+      }, 1000);
+    </script>
+  </body>
+</html>

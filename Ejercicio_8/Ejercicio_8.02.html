@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 8.2</title>
+  </head>
+  <body>
+    <script>
+      function promedioArreglo(array) {
+        if (array.length === 0) {
+          console.log(0);
+        }
+
+        let suma = 0;
+        for (let i = 1; i <= array.length; i++) {
+          suma += i;
+        }
+        const promedio = suma / array.length;
+
+        return promedio;
+      }
+
+      const arregloVacio = [];
+      const arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      const promArreglo = promedioArreglo(arreglo);
+      console.log("El promedio del arreglo es " + promArreglo);
+    </script>
+  </body>
+</html>
